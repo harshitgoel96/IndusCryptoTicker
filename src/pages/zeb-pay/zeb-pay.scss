@@ -1,0 +1,23 @@
+$primary-color-bg: #319b54;
+$primary-color: #ffffff;
+
+$danger-color-bg: #9b5431;
+$danger-color: #ffffff;
+
+$volume-color-bg:#488aff;
+$volume-color:#ffffff;
+.buy{
+	background:$primary-color-bg;
+	color:$primary-color;
+}
+.sell{
+	background:$danger-color-bg;
+	color:$danger-color;
+}
+.volume{
+	background:$volume-color-bg;
+	color:$volume-color;
+}
+page-zeb-pay {
+
+}

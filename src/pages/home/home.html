@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!--{{data.prices}}-->
+  <ion-spinner name="bubbles" *ngIf="loading"></ion-spinner>
+<ion-list *ngIf="data">
+    <ion-item *ngFor="let item of data.prices|getKeys">
+    <div>{{item}} ||  {{data.prices[item]}} </div>
+    <!--<div>high: {{data.stats[item].highest_bid}}</div>-->
+    </ion-item>
+  </ion-list>
+  <div *ngIf="errorMessage">
+    {{errorMessage}}
+  </div>
+</ion-content>
